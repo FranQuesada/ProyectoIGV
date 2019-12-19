@@ -182,3 +182,11 @@ void laberinto::pintarMuro(float x, float y, float z) {
 	glDisable(GL_TEXTURE_GEN_S); //enable texture coordinate generation
 	glDisable(GL_TEXTURE_GEN_T);
 }
+
+void laberinto::pintarPersonaje(float x, float y, float z) {
+	glPushMatrix();
+	glColor3f(0.0, 0.0, 0.9);
+	glTranslatef(x+4, 0.0f, z-28);
+	glutSolidSphere(2.0, 5, 5);
+	glPopMatrix();
+}

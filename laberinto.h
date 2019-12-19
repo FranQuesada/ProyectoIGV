@@ -32,6 +32,7 @@ public:
 	bool getLlave2() { return llave2; };
 	void setLlave1(bool valor) { llave1 = valor; };
 	void setLlave2(bool valor) { llave2 = valor; };
+	void pintarPersonaje(float x, float y, float z);
 
 };
 

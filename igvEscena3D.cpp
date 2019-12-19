@@ -26,6 +26,9 @@ void igvEscena3D::visualizar(void) {
 	glPushMatrix(); // guarda la matriz de modelado
 
 	lab.mostrar();
+	if (!modoCamara) {
+		lab.pintarPersonaje(personaje.getX(), personaje.getY(), personaje.getZ());
+	}
 
 	glPopMatrix (); // restaura la matriz de modelado
 }
